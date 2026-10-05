@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  study-playlist:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: study_playlist_app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - JWT_SECRET=study-playlist-production-secret-key-change-me
+    volumes:
+      - study_playlist_data:/app/data
+
+volumes:
+  study_playlist_data:
+    driver: local

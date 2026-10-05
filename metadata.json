@@ -1,0 +1,6 @@
+{
+  "name": "Study Playlist",
+  "description": "A modern learning platform to create, explore, and track educational playlists with YouTube videos, notes, and study resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
